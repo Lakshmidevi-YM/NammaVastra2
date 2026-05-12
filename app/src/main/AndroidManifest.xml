@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="NammaVastra"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Loom Gallery -->
+        <activity
+            android:name=".LoomGalleryActivity"
+            android:exported="false" />
+
+        <!-- Trend Board -->
+        <activity
+            android:name=".TrendBoardActivity"
+            android:exported="false" />
+
+        <!-- Price Calculator -->
+        <activity
+            android:name=".PriceCalculatorActivity"
+            android:exported="false" />
+
+        <!-- Weaver Story -->
+        <activity
+            android:name=".WeaverStoryActivity"
+            android:exported="false" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
